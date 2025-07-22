@@ -1,15 +1,23 @@
 package learningjavaproject;
-import java.util.Scanner;
+//import java.util.Arrays;
 
 public class JavaBasic {
-	public static void main(String[] args) {	
-		var scanner = new Scanner(System.in);
-		System.out.print("Input Xiaoming's last score: ");
-		int last_score = scanner.nextInt();
-		System.out.print("Input Xiaoming's current score: ");
-        int current_score = scanner.nextInt();
-        double raise_score = (double)(current_score - last_score) / last_score * 100;
-        System.out.printf("\n Xiaoming's score raised: %.2f%%", raise_score);
-        scanner.close();
+	static String name;
+	
+	public static void main(String[] args) {
+		String x = "hello";
+		setName(x);
+		getName();
+		x = "world";
+		getName();
+            
 	}
+	
+    public static void setName(String namesx) {
+        name = namesx;
+    }
+    
+    public static void getName() {
+        System.out.println(name);
+    }
 }
