@@ -8,6 +8,7 @@ import java.util.TimeZone;
 
 public class DateCalendarDemo {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 
 		System.out.println(System.currentTimeMillis()); // 获取当前时间戳
